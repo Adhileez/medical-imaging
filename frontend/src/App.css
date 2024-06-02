@@ -1,0 +1,75 @@
+/* Global styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Specific background styles */
+.login-page, .register-page, .upload-page, .display-page {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Background images */
+.login-page {
+    background-image: url('/public/assets/images/login-bg.jpg');
+}
+
+.register-page {
+    background-image: url('/public/assets/images/register-bg.jpg');
+}
+
+.upload-page {
+    background-image: url('/public/assets/images/upload-bg.jpg');
+}
+
+.display-page {
+    background-image: url('/public/assets/images/display-bg.jpg');
+}
+
+/* Container styles to ensure content is visible and centered */
+.page-container {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Scroll container for image slices and prediction slices */
+.scroll-container {
+    max-height: 80vh; /* Adjust this value as needed */
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent background */
+}
+
+.scroll-container img {
+    display: block;
+    margin: 10px auto;
+}
+
+/* Styling for the auth-container */
+.auth-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
